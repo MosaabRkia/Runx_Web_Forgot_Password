@@ -102,7 +102,7 @@ function App() {
                     margin: 5,
                     borderRadius: 10,
                   }}
-                  placeholder="Re Enter Password"
+                  placeholder="ReEnter Password"
                 />
                 {/*     width: 40%;
     height: 50px;

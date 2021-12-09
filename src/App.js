@@ -15,12 +15,9 @@ function App() {
     // setToken(window.location.pathname.substring(1));
     try {
       axios
-        .post(
-          "http://proj17.ruppin-tech.co.il/api/token/decodeForgotPassword",
-          {
-            token: window.location.pathname.substring(1),
-          }
-        )
+        .post("https://localhost:44324/api/token/decodeForgotPassword", {
+          token: window.location.pathname.substring(1),
+        })
         .then((res) => {
           console.log(res.data);
           setLoading(false);
@@ -65,7 +62,7 @@ function App() {
           }
         });
     } else {
-      alert("email address is incorrect or unvalid");
+      alert("Password is invalid");
     }
   };
   return (
